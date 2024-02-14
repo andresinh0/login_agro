@@ -5,41 +5,52 @@ body {
 }
 
 .logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
     width: 100px;
     height: 100px;
 }
 
 .background-container {
-    background-image: url('sky.jpg');
+    background-image: url('cielo_campo.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .login-container {
     background-color: rgba(247, 245, 245, 0.8);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px black;
-    width: 400px;
-    height: 300px;
-    max-width: 80%;
+    box-shadow: 0 0 5px rgb(252, 252, 252);
+    width: 650px;
+    height: calc(100vh - 100px);
     margin: auto;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
+@media screen and (min-height: 530px) {
+    .login-container {
+        height: 477px;
+    }
+}
+
+    .container__image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        background: linear-gradient(to left, rgb(78, 109, 154), rgb(17, 64, 102));
+        box-shadow: 0 0 10px rgb(6, 51, 79);
+        }
+
 .side-image {
-    position: absolute;
-    top: 50%;
-    right: 40px;
-    transform: translateY(-50%);
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
@@ -47,6 +58,8 @@ body {
     font-size: 18px;
     font-style: italic;
     margin-bottom: 20px;
+    color: aliceblue;
+    font-weight: 700;
 }
 
 .form-group {
@@ -60,14 +73,14 @@ label {
 
 #username,
 #password {
-    width: 50%;
-    padding: 8px;
+    width: 65%;
+    padding: 9px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 button {
-    background-color: #2d71e6;
+    background-color: #174ba5;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -76,5 +89,5 @@ button {
 }
 
 button:hover {
-    background-color: #1e59bf;
+    background-color: #3268c6;
 }
