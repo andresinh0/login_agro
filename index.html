@@ -11,23 +11,31 @@
   <div class="background-container">
     <div class="login-container">
       <div>
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="suizalogo.png" alt="Logo" class="logo">
+        <div class="nombreLogo">
+          <span>Suiza Agro</span>
+        </div>
         <h2>Inicio de Sesión</h2>
-        <form action="login.php" method="post">
+        <form action="login.php" >
           <div class="form-group">
-            <input type="text" id="username" name="username" placeholder="Usuario/Email" required>
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <input type="text" id="username" name="username" required>
+            <label for="username">Usuario/Email</label>
           </div>
           <div class="form-group">
-            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="password" name="password" required>
+            <label for="password">Contraseña</label>
           </div>
           <button type="submit">Iniciar Sesión</button>
         </form>
       </div>
       <div class="container__image">
-        <img src="soft.png" alt="Imagen" class="side-image">
-        <p class="slogan">"Software"</p>
+        <img src="camion7.jpg" alt="Imagen" class="side-image">
       </div>
     </div>
   </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
