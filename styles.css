@@ -1,3 +1,4 @@
+/* Reset de estilos */
 body {
     margin: 0;
     padding: 0;
@@ -5,10 +6,17 @@ body {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 90px;
 }
 
+.nombreLogo {
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+}
+
+/* Estilos para el contenedor principal */
 .background-container {
     background-image: url('cielo_campo.jpg');
     background-size: cover;
@@ -17,9 +25,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
+/* Estilos para el contenedor del formulario de inicio de sesión */
 .login-container {
     background-color: rgba(247, 245, 245, 0.8);
     padding: 20px;
@@ -33,52 +41,81 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (min-height: 530px) {
+@media screen and (min-height: 530px){
     .login-container {
         height: 477px;
     }
 }
 
-    .container__image{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 25px;
-        background: linear-gradient(to left, rgb(78, 109, 154), rgb(17, 64, 102));
-        box-shadow: 0 0 10px rgb(6, 51, 79);
-        }
+/* Estilos para la imagen y el eslogan */
+.container__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: linear-gradient(to left, rgb(78, 109, 154), rgb(17, 64, 102));
+    box-shadow: 0 0 10px rgb(6, 51, 79);
+}
 
+/* Estilos para la imagen lateral */
 .side-image {
-    width: 300px;
-    height: auto;
+    width: 325px;
+    height: 490px;
+    border-radius: 25px;
 }
 
-.slogan {
-    font-size: 18px;
-    font-style: italic;
-    margin-bottom: 20px;
-    color: aliceblue;
-    font-weight: 700;
-}
-
+/* Estilos para el formulario */
 .form-group {
-    margin-bottom: 15px;
+    position: relative;
+    margin-bottom: 32px;
+    padding-right: 40px;
+
 }
 
+/* Estilos para los campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(6, 51, 79);
+    background-color: transparent;
+    outline: none;
+    transition: .5s;
+}
+
+
+/* Estilos para los labels */
 label {
-    display: block;
-    margin-bottom: 5px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    transition: all 0.5s ease;
+    pointer-events: none;
 }
 
-#username,
-#password {
-    width: 65%;
-    padding: 9px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+
+#username:focus ~ label,
+#username:valid ~ label{
+    top: -5px;
 }
 
+#password:focus ~ label,
+#password:valid ~ label{
+    top: -5px;
+}
+
+.form-group ion-icon{
+    position: absolute;
+    right: 25px;
+    top: 12px;
+    font-size: 22px;
+}
+
+
+/* Estilos para el botón de inicio de sesión */
 button {
     background-color: #174ba5;
     color: white;
