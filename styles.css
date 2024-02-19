@@ -4,8 +4,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
-    animation: spin 1s linear infinite;
+    animation: spin 2s linear infinite;
     z-index: 9999;
+    width: 150px;
 }
 
 @keyframes spin {
