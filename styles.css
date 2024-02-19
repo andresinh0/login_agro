@@ -1,3 +1,22 @@
+/* Estilos para el spinner de carga */
+.loading-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: spin 1s linear infinite;
+    z-index: 9999;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg); /* Rotación inicial */
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg); /* Rotación completa */
+    }
+}
+
 /* Reset de estilos */
 body {
     margin: 0;
@@ -29,6 +48,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Para que el spinner se posicione correctamente */
 }
 
 /* Estilos para el contenedor del formulario de inicio de sesión */
