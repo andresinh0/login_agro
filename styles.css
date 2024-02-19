@@ -1,4 +1,3 @@
-
 /* Reset de estilos */
 body {
     margin: 0;
@@ -12,9 +11,13 @@ body {
 }
 
 .nombreLogo {
-    font-size: 20px;
-    position: relative;
-    left: 15px;
+    font-family: "Protest Riot", sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: "Anta", sans-serif;
+    font-size: 35px;
 }
 
 /* Estilos para el contenedor principal */
