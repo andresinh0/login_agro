@@ -1,3 +1,4 @@
+
 /* Reset de estilos */
 body {
     margin: 0;
@@ -39,6 +40,17 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (min-height: 530px){
@@ -84,7 +96,6 @@ input {
     transition: .5s;
 }
 
-
 /* Estilos para los labels */
 label {
     position: absolute;
@@ -95,7 +106,6 @@ label {
     transition: all 0.5s ease;
     pointer-events: none;
 }
-
 
 #username:focus ~ label,
 #username:valid ~ label{
@@ -113,7 +123,6 @@ label {
     top: 12px;
     font-size: 22px;
 }
-
 
 /* Estilos para el botón de inicio de sesión */
 button {
