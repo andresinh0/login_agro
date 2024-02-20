@@ -14,3 +14,15 @@ window.addEventListener('load', function() {
     const loadingImage = document.querySelector('.loading-image');
     loadingImage.style.display = 'none'; // Oculta la imagen de carga una vez que la página se haya cargado completamente
 });
+
+
+document.getElementById('toggleDarkMode').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode'); // Alternar la clase dark-mode en el cuerpo del documento al hacer clic en el botón
+    
+    var icon = document.getElementById('toggleDarkMode').querySelector('ion-icon');
+    if (document.body.classList.contains('dark-mode')) {
+        icon.setAttribute('name', 'moon-outline'); // Cambiar el icono a modo oscuro
+    } else {
+        icon.setAttribute('name', 'sunny-outline'); // Cambiar el icono a modo claro
+    }
+});
