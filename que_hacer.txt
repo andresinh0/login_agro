@@ -1,3 +1,0 @@
-- reemplazar la imagen de cielo_campo por la sky.jpg
-- el logo debe girar a 1.5s
-- el width de 150px
