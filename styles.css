@@ -150,7 +150,6 @@ label {
     font-size: 22px;
 }
 
-/* Estilos para el botón de inicio de sesión */
 button {
     background-color: #174ba5;
     color: white;
@@ -162,4 +161,51 @@ button {
 
 button:hover {
     background-color: #3268c6;
+}
+
+.dark-mode .background-container {
+    background-image: url('cielo_estrellado2.jpg'); /* Cambiar la imagen de fondo para el modo oscuro */
+}
+
+.dark-mode .login-container {
+    background-color: rgb(133, 133, 133);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .form-group input {
+    border-bottom-color: #fff; /* Cambiar el color del borde inferior de los campos de entrada para el modo oscuro */
+}
+
+.dark-mode label {
+    color: #ddd; /* Cambiar el color de los labels para el modo oscuro */
+}
+
+.dark-mode button {
+    background-color: #333; /* Cambiar el color de fondo del botón para el modo oscuro */
+    color: #fff;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.dark-mode h2,
+.dark-mode .nombreLogo span {
+    color: white;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2, .nombreLogo span {
+    animation: fadeEffect 3s ease;
 }
