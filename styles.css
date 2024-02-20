@@ -1,12 +1,14 @@
+
 /* Estilos para el spinner de carga */
 .loading-image {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
-    animation: spin 2s linear infinite;
+    animation: spin 1.5s linear infinite;
     z-index: 9999;
     width: 150px;
+    background-image: url('sky.jpg');
 }
 
 @keyframes spin {
@@ -42,7 +44,7 @@ h2 {
 
 /* Estilos para el contenedor principal */
 .background-container {
-    background-image: url('cielo_campo.jpg');
+    background-image: url('cielo_campo.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
