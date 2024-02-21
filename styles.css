@@ -27,11 +27,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Dimensiones de Logo */
 .logo {
     width: 130px;
     height: 90px;
 }
 
+/* Letra de Nombre Logo */
 .nombreLogo {
     font-family: "Protest Riot", sans-serif;
     font-size: 30px;
@@ -67,15 +69,17 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     animation-name: fadeIn;
-    animation-duration: 1s;
+    animation-duration: 0.2s;
+    opacity: 0.9;
 }
 
+/* Efecto de desvanecimiento */
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
-        opacity: 1;
+        opacity: 0.9;
     }
 }
 
@@ -150,15 +154,17 @@ label {
     font-size: 22px;
 }
 
+/* Boton inicio de sesion */
 button {
     background-color: #174ba5;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
+/* Color sobre el boton */
 button:hover {
     background-color: #3268c6;
 }
@@ -168,8 +174,10 @@ button:hover {
 }
 
 .dark-mode .login-container {
-    background-color: rgb(133, 133, 133);
+    /* background-color: rgb(133, 133, 133); */
+    background-color: rgb(80, 80, 80);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0.9; /* nivel de transparencia */
 }
 
 .dark-mode .form-group input {
@@ -177,7 +185,7 @@ button:hover {
 }
 
 .dark-mode label {
-    color: #ddd; /* Cambiar el color de los labels para el modo oscuro */
+    color: #ddd;
 }
 
 .dark-mode button {
@@ -208,4 +216,37 @@ button:hover {
 
 h2, .nombreLogo span {
     animation: fadeEffect 3s ease;
+}
+
+/* Pantalla de dispositivo movil */
+@media screen and (max-width: 430px) {
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 45%;
+    }
+
+    .container__image img {
+        display: none;
+    }
+
+    .form-group ion-icon {
+        position: absolute;
+        right: 25px;
+        top: 2.5px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .form-group {
+        font-size: 20px;    
+    }
+
+    .boton_inicio_sesion {
+        button {
+            font-size: 17px;
+        }
+    }
+
 }
