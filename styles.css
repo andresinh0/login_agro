@@ -39,7 +39,7 @@ body {
     font-size: 30px;
 }
 
-h2 {
+p {
     font-family: "Anta", sans-serif;
     font-size: 35px;
 }
@@ -108,11 +108,16 @@ h2 {
 }
 
 /* Estilos para el formulario */
-.form-group {
+.form-usuario {
     position: relative;
     margin-bottom: 32px;
     padding-right: 40px;
+}
 
+.form-clave {
+    position: relative;
+    margin-bottom: 32px;
+    padding-right: 40px;
 }
 
 /* Estilos para los campos de entrada */
@@ -147,7 +152,8 @@ label {
     top: -5px;
 }
 
-.form-group ion-icon{
+.form-usuario ion-icon,
+.form-clave ion-icon {
     position: absolute;
     right: 25px;
     top: 12px;
@@ -214,24 +220,25 @@ button:hover {
     }
 }
 
-h2, .nombreLogo span {
+p, .nombreLogo span {
     animation: fadeEffect 3s ease;
 }
 
 /* Pantalla de dispositivo movil */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 430px) { /* ancho igual o menor de 430 */
+
     .login-container {
         display: flex;
         flex-direction: column;
-        width: 80%;
-        height: 450px;
+        width: 80%; /* ancho */
+        height: 450px; /* altura */
     }
 
     .container__image img {
         display: none;
     }
 
-    .form-group ion-icon {
+    .form-usuario ion-icon {
         position: absolute;
         right: 13px;
         top: 2.5px;
@@ -239,8 +246,12 @@ h2, .nombreLogo span {
         height: 32px;
     }
 
-    .form-group {
-        font-size: 20px;    
+    .form-clave ion-icon {
+        position: absolute;
+        right: 13px;
+        top: 2.5px;
+        width: 32px;
+        height: 32px;
     }
 
     .boton_inicio_sesion {
@@ -250,3 +261,66 @@ h2, .nombreLogo span {
     }
 
 }
+
+@media (max-width: 940px) and (orientation: landscape) {
+    
+    .logo {
+        width: 105px;
+        height: 65px;
+    }
+
+    .nombreLogo {
+        font-size: 25px;
+    }
+
+    p {
+        position: relative;
+        top: 7px;
+    }
+
+    .login-container {
+        width: 75%;
+        height: 80%;
+    }
+
+    .side-image {
+        position: absolute;
+        height: auto;
+
+    }
+
+    .container__image {
+        position: relative;
+        height: 344px;
+        width: 325px;
+        overflow: hidden;
+        left: 13px;
+    }
+
+    .form_container {
+        position: relative;
+        top: 5px;
+        font-size: 18px;
+    }
+
+    .form-usuario,
+    .form-clave {
+        top: 28px;
+    }
+
+    .inicio {
+        font-family: "Anta", sans-serif;
+        font-size: 35px;;
+        margin: 0px;
+    }
+
+    .boton_inicio_sesion {
+        button {
+            position: relative;
+            top: 25px;
+            
+        }
+    }
+
+}
+
