@@ -97,7 +97,8 @@ p {
     justify-content: center;
     border-radius: 25px;
     background: linear-gradient(to left, rgb(78, 109, 154), rgb(17, 64, 102));
-    box-shadow: 0 0 10px rgb(6, 51, 79);
+    /* box-shadow: 0 0 10px rgb(6, 51, 79); */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 /* Estilos para la imagen lateral */
@@ -224,8 +225,8 @@ p, .nombreLogo span {
     animation: fadeEffect 3s ease;
 }
 
-/* Pantalla de dispositivo movil */
-@media screen and (max-width: 430px) { /* ancho igual o menor de 430 */
+/* Pantalla de dispositivo movil  vertical*/
+@media (max-width: 430px) { /* ancho igual o menor de 430 */
 
     .login-container {
         display: flex;
@@ -262,6 +263,7 @@ p, .nombreLogo span {
 
 }
 
+/* Pantalla de dispositivo movil horizontal */
 @media (max-width: 940px) and (orientation: landscape) {
     
     .logo {
@@ -324,3 +326,130 @@ p, .nombreLogo span {
 
 }
 
+/* Pantalla de dispositivo movil horizontal */
+@media (max-width: 850px) and (orientation: landscape) {
+    
+    .logo {
+        width: 100px;
+        height: 60px;
+    }
+
+    .nombreLogo {
+        font-size: 23px;
+    }
+
+    p {
+        position: relative;
+        top: 2px;
+    }
+
+    .login-container {
+        width: 75%;
+        height: 80%;
+    }
+
+    .side-image {
+        position: absolute;
+        height: auto;
+
+    }
+
+    .container__image {
+        position: relative;
+        height: 315px;
+        width: 315px;
+        overflow: hidden;
+        left: 1px;
+    }
+
+    .form_container {
+        position: relative;
+        top: 5px;
+        font-size: 18px;
+    }
+
+    .form-usuario,
+    .form-clave {
+        top: 18px;
+    }
+
+    .inicio {
+        font-family: "Anta", sans-serif;
+        font-size: 35px;;
+        margin: 0px;
+    }
+
+    .boton_inicio_sesion {
+        button {
+            position: relative;
+            top: 8px;
+            
+        }
+    }
+
+}
+
+/* Pantalla de monitor 1920 x 1080
+@media (max-width: 1930px) and (orientation: landscape) {
+    
+    .logo {
+        width: 200px;
+        height: 160px;
+    }
+
+    .nombreLogo {
+        font-size: 50px;
+    }
+
+    p {
+        position: relative;
+        top: 2px;
+    }
+
+    .login-container {
+        width: 75%;
+        height: 80%;
+    }
+
+    .side-image {
+        position: absolute;
+        height: auto;
+
+    }
+
+    .container__image {
+        position: relative;
+        height: 315px;
+        width: 315px;
+        overflow: hidden;
+        left: 1px;
+    }
+
+    .form_container {
+        position: relative;
+        top: 5px;
+        font-size: 18px;
+    }
+
+    .form-usuario,
+    .form-clave {
+        top: 18px;
+    }
+
+    .inicio {
+        font-family: "Anta", sans-serif;
+        font-size: 70px;
+        margin: 10px;
+    }
+
+    .boton_inicio_sesion {
+        button {
+            position: relative;
+            top: 300px;
+            left: 25px;
+            font-size: 25px;
+            
+        }
+    }
+
+} */
