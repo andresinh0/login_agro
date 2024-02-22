@@ -11,12 +11,18 @@
     background-image: url('sky.jpg');
 }
 
+/* para el video de fondo, para usar (comentar .loading-image de arriba) */
+/* .loading-image {
+    display: none;
+} */
+
+/* desactivar para el video de fondo de YT */
 @keyframes spin {
     from {
-        transform: translate(-50%, -50%) rotate(0deg); /* Rotación inicial */
+        transform: translate(-50%, -50%) rotate(0deg);
     }
     to {
-        transform: translate(-50%, -50%) rotate(360deg); /* Rotación completa */
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
@@ -44,7 +50,7 @@ p {
     font-size: 35px;
 }
 
-/* Estilos para el contenedor principal */
+/* Estilos para el contenedor principal con imagen de fondo */
 .background-container {
     background-image: url('cielo_campo.webp');
     background-size: cover;
@@ -53,8 +59,27 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Para que el spinner se posicione correctamente */
+    position: relative;
 }
+
+/* para el video de YT de fondo, para usar (comentar .background-container) */
+/* .background-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+
+/* para el video YT de fondo, para usar (comentar .background-container) */
+/* .video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
 
 /* Estilos para el contenedor del formulario de inicio de sesión */
 .login-container {
@@ -98,7 +123,7 @@ p {
     border-radius: 25px;
     background: linear-gradient(to left, rgb(78, 109, 154), rgb(17, 64, 102));
     /* box-shadow: 0 0 10px rgb(6, 51, 79); */
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(129, 129, 129);
 }
 
 /* Estilos para la imagen lateral */
@@ -183,21 +208,21 @@ button:hover {
 .dark-mode .login-container {
     /* background-color: rgb(133, 133, 133); */
     background-color: rgb(80, 80, 80);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     opacity: 0.9; /* nivel de transparencia */
 }
 
 .dark-mode .form-group input {
-    border-bottom-color: #fff; /* Cambiar el color del borde inferior de los campos de entrada para el modo oscuro */
+    border-bottom-color: #ffffff; /* Cambiar el color del borde inferior de los campos de entrada para el modo oscuro */
 }
 
 .dark-mode label {
-    color: #ddd;
+    color: #ffffff;
 }
 
 .dark-mode button {
     background-color: #333; /* Cambiar el color de fondo del botón para el modo oscuro */
-    color: #fff;
+    color: #ffffff;
 }
 
 .dark-mode-toggle {
@@ -209,7 +234,7 @@ button:hover {
 
 .dark-mode p,
 .dark-mode .nombreLogo span {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 @keyframes fadeEffect {
@@ -453,3 +478,5 @@ p, .nombreLogo span {
     }
 
 } */
+
+
