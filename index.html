@@ -24,22 +24,24 @@
         <div class="nombreLogo">
           <span>Suiza Agro</span>
         </div>
-        <h2>Inicio de Sesión</h2>
-        <form action="https://www.youtube.com/" method="post"> <!-- cuando le de a iniciar sesion, voy a yt -->
-          <div class="form-group">
-            <ion-icon name="person-circle-outline"></ion-icon>
-            <input type="text" id="username" name="username" required>
-            <label for="username">Usuario/Email</label>
-          </div>
-          <div class="form-group">
-            <ion-icon id="togglePassword" name="lock-closed-outline"></ion-icon>
-            <input type="password" id="password" name="password" required>
-            <label for="password">Contraseña</label>
-          </div>
-          <div class="boton_inicio_sesion">
-            <button type="submit">Iniciar Sesión</button>
-          </div>
-        </form>
+        <div class="form_container">
+          <p class="inicio">Inicio de Sesión</p>
+          <form action="https://www.youtube.com/" method="post"> <!-- cuando le de a iniciar sesion, voy a yt -->
+            <div class="form-usuario">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <input type="text" id="username" name="username" required>
+              <label for="username">Usuario/Email</label>
+            </div>
+            <div class="form-clave">
+              <ion-icon id="togglePassword" name="lock-closed-outline"></ion-icon>
+              <input type="password" id="password" name="password" required>
+              <label for="password">Contraseña</label>
+            </div>
+            <div class="boton_inicio_sesion">
+              <button type="submit">Iniciar Sesión</button>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="container__image">
         <img src="camion-login.webp" alt="Imagen" class="side-image">
