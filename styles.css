@@ -207,7 +207,7 @@ button:hover {
     z-index: 1000;
 }
 
-.dark-mode h2,
+.dark-mode p,
 .dark-mode .nombreLogo span {
     color: white;
 }
