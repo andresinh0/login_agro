@@ -480,3 +480,64 @@ p, .nombreLogo span {
 } */
 
 
+@media (min-width: 812px) and (orientation: landscape) {
+    
+    .logo {
+        width: 80px;
+        height: 45px;
+    }
+
+    .nombreLogo {
+        font-size: 19px;
+    }
+
+    p {
+        position: relative;
+        top: 0px;
+    }
+
+    .login-container {
+        width: 75%;
+        height: 80%;
+    }
+
+    .side-image {
+        position: absolute;
+        height: auto;
+
+    }
+
+    .container__image {
+        position: relative;
+        height: 305px;
+        width: 315px;
+        overflow: hidden;
+        left: 1px;
+    }
+
+    .form_container {
+        position: relative;
+        top: 3px;
+        font-size: 18px;
+    }
+
+    .form-usuario,
+    .form-clave {
+        top: 18px;
+    }
+
+    .inicio {
+        font-family: "Anta", sans-serif;
+        font-size: 35px;;
+        margin: 0px;
+    }
+
+    .boton_inicio_sesion {
+        button {
+            position: relative;
+            top: 8px;
+            
+        }
+    }
+
+}
