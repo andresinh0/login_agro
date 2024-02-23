@@ -45,7 +45,7 @@ body {
     font-size: 30px;
 }
 
-p {
+.inicio /*.p*/ {
     font-family: "Anta", sans-serif;
     font-size: 35px;
 }
@@ -137,13 +137,13 @@ p {
 .form-usuario {
     position: relative;
     margin-bottom: 32px;
-    padding-right: 40px;
+    padding-right: 48px;
 }
 
 .form-clave {
     position: relative;
     margin-bottom: 32px;
-    padding-right: 40px;
+    padding-right: 48px;
 }
 
 /* Estilos para los campos de entrada */
@@ -232,7 +232,7 @@ button:hover {
     z-index: 1000;
 }
 
-.dark-mode p,
+.dark-mode .inicio,
 .dark-mode .nombreLogo span {
     color: rgb(255, 255, 255);
 }
@@ -246,7 +246,7 @@ button:hover {
     }
 }
 
-p, .nombreLogo span {
+.inicio, .nombreLogo span {
     animation: fadeEffect 3s ease;
 }
 
@@ -300,11 +300,6 @@ p, .nombreLogo span {
         font-size: 25px;
     }
 
-    p {
-        position: relative;
-        top: 7px;
-    }
-
     .login-container {
         width: 75%;
         height: 80%;
@@ -339,6 +334,8 @@ p, .nombreLogo span {
         font-family: "Anta", sans-serif;
         font-size: 35px;;
         margin: 0px;
+        position: relative;
+        top: 7px;
     }
 
     .boton_inicio_sesion {
@@ -355,17 +352,12 @@ p, .nombreLogo span {
 @media (max-width: 850px) and (orientation: landscape) {
     
     .logo {
-        width: 100px;
-        height: 60px;
+        width: 95px;
+        height: 55px;
     }
 
     .nombreLogo {
-        font-size: 23px;
-    }
-
-    p {
-        position: relative;
-        top: 2px;
+        font-size: 20px;
     }
 
     .login-container {
@@ -400,8 +392,10 @@ p, .nombreLogo span {
 
     .inicio {
         font-family: "Anta", sans-serif;
-        font-size: 35px;;
+        font-size: 30px;;
         margin: 0px;
+        position: relative;
+        top: 7px;
     }
 
     .boton_inicio_sesion {
@@ -480,7 +474,7 @@ p, .nombreLogo span {
 } */
 
 
-@media (min-width: 812px) and (orientation: landscape) {
+/* @media (min-width: 812px) and (orientation: landscape) {
     
     .logo {
         width: 80px;
@@ -540,4 +534,4 @@ p, .nombreLogo span {
         }
     }
 
-}
+} */
